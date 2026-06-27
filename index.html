@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Infotech International is an educational ecommerce platform demo selling technology, home, fashion, groceries, industrial supplies, and digital products.">
+  <meta name="theme-color" content="#0f172a">
+  <title>Infotech International | Technology Beyond Boundaries</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="loading-screen" id="loadingScreen" aria-live="polite">
+    <div class="loading-card">
+      <img src="assets/icons/logo.svg" alt="Infotech International" class="loading-logo">
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+
+  <header class="site-header">
+    <div class="top-strip">
+      <span>Free educational demo delivery on orders over $49</span>
+      <nav aria-label="Utility navigation">
+        <a href="#deals">Today&apos;s Deals</a>
+        <a href="#support">Support</a>
+        <a href="#newsletter">Newsletter</a>
+      </nav>
+    </div>
+
+    <div class="main-nav">
+      <a href="#home" class="brand" aria-label="Infotech International home">
+        <img src="assets/icons/logo.svg" alt="Infotech International logo">
+      </a>
+
+      <button class="icon-button menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <form class="search-shell" id="searchForm" role="search">
+        <label class="screen-reader-only" for="searchInput">Search products</label>
+        <select id="categorySelect" aria-label="Search category">
+          <option value="all">All</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Home">Home</option>
+          <option value="Technology">Technology</option>
+          <option value="Office">Office</option>
+        </select>
+        <input id="searchInput" type="search" placeholder="Search laptops, beauty, groceries, tools..." autocomplete="off">
+        <button class="voice-button" type="button" id="voiceButton" aria-label="Voice search"><span class="icon-mic"></span></button>
+        <button class="search-button" type="submit" aria-label="Search"><span class="icon-search"></span></button>
+        <div class="search-suggestions" id="searchSuggestions" role="listbox" aria-label="Search suggestions"></div>
+      </form>
+
+      <div class="nav-actions" aria-label="Account and shopping actions">
+        <button class="mode-toggle" id="modeToggle" type="button" aria-label="Switch color mode"><span class="sun"></span><span class="moon"></span></button>
+        <a href="#signin" class="nav-pill">Sign In</a>
+        <button class="action-button" id="wishlistButton" type="button" aria-label="Wishlist"><span class="icon-heart"></span><strong id="wishlistCount">0</strong></button>
+        <button class="action-button" id="cartButton" type="button" aria-label="Cart"><span class="icon-cart"></span><strong id="cartCount">0</strong></button>
+      </div>
+    </div>
+
+    <nav class="category-nav" id="categoryNav" aria-label="Main categories">
+      <a href="#categories">All Categories</a>
+      <a href="#featured">Electronics</a>
+      <a href="#fashion">Fashion</a>
+      <a href="#home-garden">Home</a>
+      <a href="#gaming">Gaming</a>
+      <a href="#books">Books</a>
+      <a href="#industrial">Industrial</a>
+      <a href="#digital">Digital Products</a>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <section class="hero-section" id="home" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <span class="eyebrow">Premium educational marketplace</span>
+        <h1 id="heroTitle">Technology Beyond Boundaries</h1>
+        <p>Explore a polished demo marketplace for electronics, fashion, groceries, tools, books, software, smart home devices, and more.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#featured">Shop Featured</a>
+          <a class="secondary-button" href="#deals">View Deals</a>
+        </div>
+        <div class="delivery-card" aria-label="Delivery estimator">
+          <span class="icon-location"></span>
+          <div>
+            <strong>Delivery estimator</strong>
+            <small id="deliveryEstimate">Enter checkout later for live shipping options</small>
+          </div>
+        </div>
+      </div>
+      <div class="hero-market" aria-label="Featured marketplace panels">
+        <article class="hero-deal glass-panel">
+          <span class="deal-badge">Flash Sale</span>
+          <img src="assets/images/laptop.svg" alt="AuroraBook Pro laptop artwork" loading="eager">
+          <h2>AuroraBook Pro Bundle</h2>
+          <p>Save 22% with accessories and cloud software.</p>
+          <div class="countdown" id="dealCountdown" aria-label="Flash sale countdown">00:00:00</div>
+        </article>
+        <article class="mini-panel glass-panel">
+          <span>AI Picks</span>
+          <strong id="aiPickTitle">Smart Home Hub</strong>
+          <small>Based on popular carts</small>
+        </article>
+        <article class="mini-panel glass-panel accent-panel">
+          <span>Inventory Alert</span>
+          <strong>42 hot items</strong>
+          <small>Low stock in trending categories</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-strip" aria-label="Store promises">
+      <div><strong>Secure checkout</strong><span>JWT, hashing, cookies and sessions planned</span></div>
+      <div><strong>Fast storefront</strong><span>Lazy loading, cached JSON and pagination ready</span></div>
+      <div><strong>Admin ready</strong><span>Inventory, analytics and orders in future modules</span></div>
+      <div><strong>Accessible UI</strong><span>Keyboard friendly and responsive layouts</span></div>
+    </section>
+
+    <section class="section-band" id="categories">
+      <div class="section-heading"><div><span class="eyebrow">Shop by department</span><h2>Explore Categories</h2></div><button class="text-button" id="shuffleCategories" type="button">Refresh View</button></div>
+      <div class="category-grid" id="categoryGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section-band muted-band" id="featured">
+      <div class="section-heading">
+        <div><span class="eyebrow">Handpicked products</span><h2>Featured Products</h2></div>
+        <div class="filter-row" aria-label="Product filters">
+          <button class="filter-chip active" data-filter="all" type="button">All</button>
+          <button class="filter-chip" data-filter="Electronics" type="button">Electronics</button>
+          <button class="filter-chip" data-filter="Fashion" type="button">Fashion</button>
+          <button class="filter-chip" data-filter="Home" type="button">Home</button>
+          <button class="filter-chip" data-filter="Technology" type="button">Technology</button>
+        </div>
+      </div>
+      <div class="advanced-search-panel">
+        <label for="priceRange">Max price <strong id="priceLabel">$2,000</strong><input id="priceRange" type="range" min="20" max="2500" value="2000" step="20"></label>
+        <select id="sortSelect" aria-label="Sort products"><option value="featured">Sort: Featured</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option><option value="rating">Top Rated</option></select>
+      </div>
+      <div class="product-grid" id="featuredGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section-band split-showcase" id="deals">
+      <div class="deal-panel"><span class="eyebrow">Today&apos;s deals</span><h2>Flash Sale</h2><p>Countdown offers, coupons, and gift cards are wired as front-end states in this module and ready for backend logic later.</p><div class="coupon-box"><code>INFOTECH15</code><button type="button" id="copyCoupon">Copy</button></div></div>
+      <div class="deal-products" id="dealProducts"></div>
+    </section>
+
+    <section class="section-band" id="trending">
+      <div class="section-heading"><div><span class="eyebrow">Market movement</span><h2>Trending, Best Sellers, and Recommended</h2></div></div>
+      <div class="tab-bar" role="tablist" aria-label="Product collections"><button class="tab-button active" data-tab="trending" type="button" role="tab">Trending</button><button class="tab-button" data-tab="bestSellers" type="button" role="tab">Best Sellers</button><button class="tab-button" data-tab="recommended" type="button" role="tab">Recommended</button></div>
+      <div class="horizontal-products" id="collectionGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section-band muted-band"><div class="section-heading"><div><span class="eyebrow">Trusted ecosystem</span><h2>Popular Brands</h2></div></div><div class="brand-strip" id="brandStrip"></div></section>
+
+    <section class="section-band insight-grid">
+      <div class="reviews-panel"><div class="section-heading compact-heading"><div><span class="eyebrow">Customer voice</span><h2>Reviews</h2></div></div><div class="review-list" id="reviewList"></div></div>
+      <div class="stats-panel"><span class="eyebrow">Live demo statistics</span><div class="stats-grid" id="statsGrid"></div></div>
+    </section>
+
+    <section class="section-band media-band">
+      <div><span class="eyebrow">Learn and discover</span><h2>Latest Technology News</h2><div class="news-list" id="newsList"></div></div>
+      <div><span class="eyebrow">Featured videos</span><h2>Product Guides</h2><div class="video-list" id="videoList"></div></div>
+    </section>
+
+    <section class="newsletter-band" id="newsletter">
+      <div><span class="eyebrow">Stay updated</span><h2>Get deal alerts, product launches, and learning notes.</h2></div>
+      <form id="newsletterForm" class="newsletter-form"><label class="screen-reader-only" for="newsletterEmail">Email address</label><input id="newsletterEmail" type="email" placeholder="student@example.com" required><button class="primary-button" type="submit">Subscribe</button></form>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="support">
+    <div class="footer-brand"><img src="assets/icons/logo.svg" alt="Infotech International logo"><p>Original educational ecommerce demo. Inspired by marketplace patterns, not by copyrighted layouts or assets.</p></div>
+    <div class="footer-links">
+      <div><h3>Shop</h3><a href="#categories">Departments</a><a href="#deals">Deals</a><a href="#featured">Featured</a></div>
+      <div><h3>Account</h3><a href="#signin">Login</a><a href="#profile">Profile</a><a href="#orders">Orders</a></div>
+      <div><h3>Business</h3><a href="#admin">Admin</a><a href="#analytics">Analytics</a><a href="#inventory">Inventory</a></div>
+      <div><h3>Settings</h3><button type="button" id="languageButton">Language: EN</button><button type="button" id="currencyButton">Currency: USD</button></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Infotech International</span><span>Technology Beyond Boundaries</span></div>
+  </footer>
+
+  <div class="floating-tools" aria-label="Quick tools"><button type="button" id="chatButton" aria-label="Open chatbot"><span class="icon-chat"></span></button><button type="button" id="qrButton" aria-label="Generate QR code"><span class="icon-qr"></span></button></div>
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

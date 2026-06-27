@@ -1,0 +1,446 @@
+{
+  "categories": [
+    {
+      "name": "Electronics",
+      "initials": "EL",
+      "count": 1840
+    },
+    {
+      "name": "Computers",
+      "initials": "PC",
+      "count": 720
+    },
+    {
+      "name": "Fashion",
+      "initials": "FA",
+      "count": 2380
+    },
+    {
+      "name": "Home",
+      "initials": "HO",
+      "count": 1640
+    },
+    {
+      "name": "Kitchen",
+      "initials": "KI",
+      "count": 980
+    },
+    {
+      "name": "Industrial",
+      "initials": "IN",
+      "count": 430
+    },
+    {
+      "name": "Automotive",
+      "initials": "AU",
+      "count": 510
+    },
+    {
+      "name": "Office",
+      "initials": "OF",
+      "count": 690
+    },
+    {
+      "name": "Health",
+      "initials": "HE",
+      "count": 860
+    },
+    {
+      "name": "Sports",
+      "initials": "SP",
+      "count": 790
+    },
+    {
+      "name": "Gaming",
+      "initials": "GM",
+      "count": 520
+    },
+    {
+      "name": "Books",
+      "initials": "BK",
+      "count": 4100
+    },
+    {
+      "name": "Pet Supplies",
+      "initials": "PS",
+      "count": 340
+    },
+    {
+      "name": "Garden",
+      "initials": "GD",
+      "count": 470
+    },
+    {
+      "name": "Technology",
+      "initials": "TX",
+      "count": 1190
+    }
+  ],
+  "products": [
+    {
+      "id": "p1001",
+      "name": "AuroraBook Pro 14 Laptop",
+      "brand": "Aster",
+      "category": "Electronics",
+      "price": 1299,
+      "discount": 22,
+      "rating": 4.9,
+      "stock": 18,
+      "flashSale": true,
+      "image": "images/laptop.svg",
+      "description": "Slim creator laptop with a crisp display, long battery life, and study-ready performance.",
+      "tags": [
+        "trending",
+        "bestSellers",
+        "recommended"
+      ]
+    },
+    {
+      "id": "p1002",
+      "name": "Nova X5 Smartphone",
+      "brand": "Nova",
+      "category": "Electronics",
+      "price": 799,
+      "discount": 15,
+      "rating": 4.7,
+      "stock": 31,
+      "flashSale": true,
+      "image": "images/phone.svg",
+      "description": "Fast 5G phone with advanced cameras and a bright all-day display.",
+      "tags": [
+        "trending",
+        "recommended"
+      ]
+    },
+    {
+      "id": "p1003",
+      "name": "PulseFit Smart Watch",
+      "brand": "Pulse",
+      "category": "Health",
+      "price": 189,
+      "discount": 18,
+      "rating": 4.6,
+      "stock": 44,
+      "flashSale": false,
+      "image": "images/watch.svg",
+      "description": "Tracks workouts, sleep, notifications, hydration, and heart-rate trends.",
+      "tags": [
+        "bestSellers",
+        "recommended"
+      ]
+    },
+    {
+      "id": "p1004",
+      "name": "Quantum Wireless Headset",
+      "brand": "Quantum",
+      "category": "Gaming",
+      "price": 149,
+      "discount": 30,
+      "rating": 4.8,
+      "stock": 22,
+      "flashSale": true,
+      "image": "images/headset.svg",
+      "description": "Low-latency headset with surround audio and a clear detachable microphone.",
+      "tags": [
+        "trending",
+        "bestSellers"
+      ]
+    },
+    {
+      "id": "p1005",
+      "name": "Creator 4K Camera Kit",
+      "brand": "FrameLab",
+      "category": "Technology",
+      "price": 649,
+      "discount": 12,
+      "rating": 4.5,
+      "stock": 13,
+      "flashSale": false,
+      "image": "images/camera.svg",
+      "description": "Compact camera kit for videos, classes, streaming, and product photography.",
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "p1006",
+      "name": "Smart Home Control Hub",
+      "brand": "HomeGrid",
+      "category": "Home",
+      "price": 129,
+      "discount": 10,
+      "rating": 4.7,
+      "stock": 57,
+      "flashSale": false,
+      "image": "images/smart-home.svg",
+      "description": "Central hub for lighting, climate, cameras, routines, and voice assistants.",
+      "tags": [
+        "trending",
+        "recommended"
+      ]
+    },
+    {
+      "id": "p1007",
+      "name": "Velocity Run Shoes",
+      "brand": "Stride",
+      "category": "Fashion",
+      "price": 92,
+      "discount": 25,
+      "rating": 4.4,
+      "stock": 61,
+      "flashSale": true,
+      "image": "images/shoes.svg",
+      "description": "Lightweight daily trainers with breathable mesh and cushioned support.",
+      "tags": [
+        "bestSellers"
+      ]
+    },
+    {
+      "id": "p1008",
+      "name": "Metro Travel Backpack",
+      "brand": "CarryPro",
+      "category": "Fashion",
+      "price": 74,
+      "discount": 20,
+      "rating": 4.6,
+      "stock": 73,
+      "flashSale": false,
+      "image": "images/bag.svg",
+      "description": "Water-resistant bag with laptop storage, organizer pockets, and luggage strap.",
+      "tags": [
+        "trending",
+        "recommended"
+      ]
+    },
+    {
+      "id": "p1009",
+      "name": "Glow Daily Beauty Kit",
+      "brand": "Glowry",
+      "category": "Health",
+      "price": 58,
+      "discount": 16,
+      "rating": 4.3,
+      "stock": 96,
+      "flashSale": false,
+      "image": "images/beauty.svg",
+      "description": "Gentle skincare essentials for daily care, travel, and gifting.",
+      "tags": [
+        "bestSellers"
+      ]
+    },
+    {
+      "id": "p1010",
+      "name": "Fresh Pantry Grocery Box",
+      "brand": "Harvest",
+      "category": "Kitchen",
+      "price": 46,
+      "discount": 8,
+      "rating": 4.5,
+      "stock": 120,
+      "flashSale": false,
+      "image": "images/grocery.svg",
+      "description": "Shelf-stable grocery bundle with grains, snacks, sauces, and breakfast staples.",
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "p1011",
+      "name": "Luna Modular Sofa",
+      "brand": "Luna",
+      "category": "Home",
+      "price": 899,
+      "discount": 14,
+      "rating": 4.4,
+      "stock": 9,
+      "flashSale": false,
+      "image": "images/furniture.svg",
+      "description": "Compact modular sofa with stain-resistant fabric and firm support.",
+      "tags": [
+        "trending"
+      ]
+    },
+    {
+      "id": "p1012",
+      "name": "Titan Industrial Tool Set",
+      "brand": "Titan",
+      "category": "Industrial",
+      "price": 219,
+      "discount": 17,
+      "rating": 4.8,
+      "stock": 27,
+      "flashSale": false,
+      "image": "images/tools.svg",
+      "description": "Durable hand-tool set for repair labs, workshops, and maintenance teams.",
+      "tags": [
+        "bestSellers",
+        "recommended"
+      ]
+    },
+    {
+      "id": "p1013",
+      "name": "STEM Learning Book Bundle",
+      "brand": "OpenPage",
+      "category": "Books",
+      "price": 84,
+      "discount": 11,
+      "rating": 4.9,
+      "stock": 65,
+      "flashSale": true,
+      "image": "images/books.svg",
+      "description": "Curated programming, robotics, math, and product design learning set.",
+      "tags": [
+        "trending",
+        "bestSellers",
+        "recommended"
+      ]
+    },
+    {
+      "id": "p1014",
+      "name": "Auto Care Emergency Kit",
+      "brand": "RoadSure",
+      "category": "Automotive",
+      "price": 119,
+      "discount": 19,
+      "rating": 4.5,
+      "stock": 34,
+      "flashSale": false,
+      "image": "images/auto.svg",
+      "description": "Roadside safety, tire-care, jump-start, and maintenance essentials.",
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "p1015",
+      "name": "Baby Comfort Starter Set",
+      "brand": "LittleNest",
+      "category": "Home",
+      "price": 139,
+      "discount": 13,
+      "rating": 4.6,
+      "stock": 26,
+      "flashSale": false,
+      "image": "images/baby.svg",
+      "description": "Soft nursery essentials with storage, blankets, and care accessories.",
+      "tags": [
+        "bestSellers"
+      ]
+    },
+    {
+      "id": "p1016",
+      "name": "Cloud Suite Pro License",
+      "brand": "SkyDesk",
+      "category": "Technology",
+      "price": 99,
+      "discount": 35,
+      "rating": 4.7,
+      "stock": 500,
+      "flashSale": true,
+      "image": "images/software.svg",
+      "description": "Digital productivity license with storage, collaboration, and admin tools.",
+      "tags": [
+        "trending",
+        "recommended"
+      ]
+    }
+  ],
+  "brands": [
+    {
+      "name": "Aster",
+      "initials": "AS",
+      "category": "Computers"
+    },
+    {
+      "name": "Nova",
+      "initials": "NV",
+      "category": "Smartphones"
+    },
+    {
+      "name": "HomeGrid",
+      "initials": "HG",
+      "category": "Smart Home"
+    },
+    {
+      "name": "Titan",
+      "initials": "TT",
+      "category": "Tools"
+    },
+    {
+      "name": "SkyDesk",
+      "initials": "SD",
+      "category": "Software"
+    },
+    {
+      "name": "Stride",
+      "initials": "ST",
+      "category": "Fashion"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Maya R.",
+      "rating": 5,
+      "comment": "The layout feels premium but still easy to understand. I used it to explain cart and wishlist flows in class."
+    },
+    {
+      "name": "Omar A.",
+      "rating": 5,
+      "comment": "Great sample data, clean categories, and the dark mode makes the store feel production-ready."
+    },
+    {
+      "name": "Sophia K.",
+      "rating": 4,
+      "comment": "The homepage has enough real ecommerce behavior to practice frontend and backend modules."
+    }
+  ],
+  "news": [
+    {
+      "initials": "AI",
+      "title": "AI shopping assistants move into product discovery",
+      "summary": "Recommendation panels can later use order history, views, and category affinity."
+    },
+    {
+      "initials": "UX",
+      "title": "Fast filters improve marketplace conversion",
+      "summary": "Price, rating, brand, and availability filters reduce browsing friction."
+    },
+    {
+      "initials": "SEC",
+      "title": "Secure sessions matter in ecommerce",
+      "summary": "JWT, cookies, CSRF, password hashing, and rate limits belong in the auth module."
+    }
+  ],
+  "videos": [
+    {
+      "title": "How product comparison works",
+      "length": "6 min"
+    },
+    {
+      "title": "Building an admin inventory dashboard",
+      "length": "9 min"
+    },
+    {
+      "title": "Checkout flow explained for beginners",
+      "length": "8 min"
+    }
+  ],
+  "stats": [
+    {
+      "value": "32+",
+      "label": "Departments planned"
+    },
+    {
+      "value": "16",
+      "label": "Sample products now"
+    },
+    {
+      "value": "99%",
+      "label": "Responsive layout target"
+    },
+    {
+      "value": "12",
+      "label": "Future API groups"
+    }
+  ]
+}
